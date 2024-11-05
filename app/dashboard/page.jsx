@@ -5,7 +5,7 @@ import IntterviewList from "./_components/IntterviewList";
 
 const Dashboard = () => {
   return (
-    <div className="p-10">
+    <div className="py-10">
       <h2 className="font-bold text-2xl">Dashboard</h2>
       <h2 className="capitalize text-gray-500">
         create and start your AI mockup interviews

@@ -64,3 +64,11 @@
     @apply bg-background text-foreground;
   }
 }
+/* styles/globals.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.du {
+  transition: color 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+}
