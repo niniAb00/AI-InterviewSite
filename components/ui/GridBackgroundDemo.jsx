@@ -56,14 +56,14 @@ export function GridBackgroundDemo() {
         <h2
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-fontc leading-[96px] font-extrabold text-[86px] text-transparent bg-clip-text bg-gradient-to-b from-[#1F2937] to-[#1F2937] py-8 "
+          className="text-primary md:leading-[96px] font-extrabold text-[38px]  lg:text-[86px] text-transparent bg-clip-text bg-gradient-to-b leading-[50px] from-[#1F2937] to-[#1F2937] py-8 "
         >
           Preparing for interviews should <br /> be easier than facing them.
         </h2>
 
-        <div className="flex items-center  justify-normal gap-12 w-full">
+        <div className="flex flex-col-reverse items-center  md:flex-row jus justify-center md:justify-normal md:gap:12 gap-5 w-full">
           <div className="flex flex-col gap-4">
-            <Link href={"/dashboard"}>
+            <Link className="text-center m-auto" href={"/dashboard"}>
               {" "}
               <Button
                 data-aos="fade-left"
@@ -84,7 +84,11 @@ export function GridBackgroundDemo() {
               </p>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="500" className="w-[496.69px]">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            className="w-full text-center md:w-[496.69px]"
+          >
             <p>
               HRWise empowers job seekers with realistic interviews,
               personalized feedback, and tools to refine their responses.**

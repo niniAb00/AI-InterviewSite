@@ -3,7 +3,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div>
+    <div id="Features" className="overflow-hidden">
       <div className="mb-5 mt-10 text-center">
         <h2
           data-aos="fade-up"

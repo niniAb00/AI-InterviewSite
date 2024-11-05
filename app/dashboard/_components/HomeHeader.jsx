@@ -13,8 +13,13 @@ const HomeHeader = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <div className="  grid grid-cols-2 py-4 items-center justify-between ">
-        <Link data-aos="fade-down" data-aos-delay="500" href={"/"}>
+      <div className="  grid grid-cols-1 md:grid-cols-2 py-4 items-center justify-between ">
+        <Link
+          className="m-auto md:m-0"
+          data-aos="fade-down"
+          data-aos-delay="500"
+          href={"/"}
+        >
           {" "}
           <Image src={"/logo.svg"} width={160} height={100} />
         </Link>
