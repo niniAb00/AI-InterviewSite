@@ -56,7 +56,7 @@ export function GridBackgroundDemo() {
         <h2
           data-aos="fade-up"
           data-aos-delay="300"
-          className="text-primary md:leading-[96px] font-extrabold text-[38px]  lg:text-[86px] text-transparent bg-clip-text bg-gradient-to-b leading-[50px] from-[#1F2937] to-[#1F2937] py-8 "
+          className="text-primary md:leading-[96px] font-extrabold text-[38px]  lg:text-[86px]  leading-[50px] py-8 "
         >
           Preparing for interviews should <br /> be easier than facing them.
         </h2>
