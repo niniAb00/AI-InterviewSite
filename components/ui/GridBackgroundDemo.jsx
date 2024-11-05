@@ -39,11 +39,18 @@
 //     </div>
 //   );
 // }
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { Button } from "./button";
 import Link from "next/link";
+import Aos from "aos";
 
 export function GridBackgroundDemo() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1200,
+    });
+  }, []);
   return (
     <div
       className="relative overflow-hidden flex items-center justify-center bg-[#fcf7ec] dark:bg-black dark:bg-grid-white/[0.2] bg-grid-black/[0.09]"
@@ -63,7 +70,7 @@ export function GridBackgroundDemo() {
 
         <div className="flex flex-col-reverse items-center  md:flex-row jus justify-center md:justify-normal md:gap:12 gap-5 w-full">
           <div className="flex flex-col gap-4">
-            <Link className="text-center m-auto" href={"/dashboard"}>
+            <Link className="m-auto md:m-0" href={"/dashboard"}>
               {" "}
               <Button
                 data-aos="fade-left"
@@ -91,7 +98,7 @@ export function GridBackgroundDemo() {
           >
             <p>
               HRWise empowers job seekers with realistic interviews,
-              personalized feedback, and tools to refine their responses.**
+              personalized feedback, and tools to refine their responses.
             </p>
           </div>
         </div>

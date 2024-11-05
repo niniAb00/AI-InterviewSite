@@ -25,7 +25,7 @@ const HomeHeader = () => {
         </Link>
 
         <div>
-          <ul className="hidden md:flex gap-6 items-center justify-end">
+          <ul className=" pt-4 md:pt-0 flex gap-6 items-center justify-center">
             {items.map((item, index) => (
               <li
                 key={index}

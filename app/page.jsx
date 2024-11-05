@@ -10,12 +10,6 @@ import { useEffect } from "react";
 import Features from "./dashboard/_components/Features";
 import { FeaturesSectionDemo } from "@/components/ui/FeaturesSectionDemo";
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-
   return (
     <div className="">
       {" "}
