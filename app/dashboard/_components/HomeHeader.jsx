@@ -21,11 +21,11 @@ const HomeHeader = () => {
           href={"/"}
         >
           {" "}
-          <Image src={"/logo.svg"} width={160} height={100} />
+          <h2 className="font-bold text-primary text-2xl">HRWise</h2>{" "}
         </Link>
 
         <div>
-          <ul className=" pt-4 md:pt-0 flex gap-6 items-center justify-center">
+          <ul className=" pt-4 md:pt-0 flex gap-6 items-center md:justify-end justify-center">
             {items.map((item, index) => (
               <li
                 key={index}
