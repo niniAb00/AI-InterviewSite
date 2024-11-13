@@ -19,6 +19,7 @@ const HomeHeader = () => {
           data-aos="fade-down"
           data-aos-delay="500"
           href={"/"}
+          ـ
         >
           {" "}
           <h2 className="font-bold text-primary text-2xl">HRWise</h2>{" "}
