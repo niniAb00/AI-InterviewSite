@@ -1,4 +1,5 @@
 "use client";
+import { items } from "@/data";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,44 +12,22 @@ const Header = () => {
     console.log(path);
   }, []);
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-4 items-center justify-between bg-scendary ">
-      <Link href={"/"}>
-        {" "}
-        <Image src={"/logo.svg"} width={160} height={100} />
-      </Link>
-      <ul className="hidden md:flex gap-6 items-center justify-center">
-        <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer
-            ${path == "/dashboard" && "text-primary font-bold"}
-          `}
+    <div className="overflow-hidden">
+      <div className="  grid grid-cols-1 md:grid-cols-2 py-4 items-center justify-between ">
+        <Link
+          className="m-auto md:m-0"
+          data-aos="fade-down"
+          data-aos-delay="500"
+          href={"/"}
+          ـ
         >
-          <Link href={"/dashboard"}>Dashboard</Link>
-        </li>
+          {" "}
+          <h2 className="font-bold text-primary text-2xl">HRWise</h2>{" "}
+        </Link>
 
-        <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer
-            ${path == "/question" && "text-primary font-bold"}
-          `}
-        >
-          <Link href={"/question"}>Questions</Link>
-        </li>
-        <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer
-            ${path == "/dashboard/upgrade" && "text-primary font-bold"}
-          `}
-        >
-          Upgrade
-        </li>
-        <li
-          className={`hover:text-primary hover:font-bold transition-all cursor-pointer
-            ${path == "/dashboard/how" && "text-primary font-bold"}
-          `}
-        >
-          <Link href="#nnn"> How it Works?</Link>
-        </li>
-      </ul>
-      <div className="flex  justify-end">
-        <UserButton />
+        <div className="flex justify-end items-center">
+          <UserButton />
+        </div>
       </div>
     </div>
   );

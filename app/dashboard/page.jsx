@@ -13,6 +13,7 @@ const Dashboard = () => {
       <div className="grid  grid-cols-1 md:grid-cols-3 my-3">
         <AddNewInterview />
       </div>
+
       <IntterviewList />
     </div>
   );

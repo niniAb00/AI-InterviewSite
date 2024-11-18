@@ -22,8 +22,9 @@ export default function Home() {
       <Features />
       <Benefits />
       <Testimonials />
-      <CallAction />
-      <Footer />
+        <CallAction />
+            <Footer />
+            <Footer />
     </div>
   );
 }
